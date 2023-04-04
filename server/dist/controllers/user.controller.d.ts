@@ -1,6 +1,6 @@
-import { UserService } from '../services/userService';
-import { UserResponse } from '../interfaces/userResponseInterface';
-import { User } from '../interfaces/userInterface';
+import { UserService } from '../services/user.service';
+import { UserResponse } from '../interfaces/user-esponse.interface';
+import { User } from '../interfaces/user.interface';
 export declare class UserController {
     private readonly userService;
     constructor(userService: UserService);

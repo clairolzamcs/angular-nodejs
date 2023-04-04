@@ -1,4 +1,4 @@
-import { User } from './userInterface';
+import { User } from './user.interface';
 
 export interface UserResponse {
   users: User[];

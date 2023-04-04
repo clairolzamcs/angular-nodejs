@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
-import { HttpService } from './httpService';
-import { User } from '../interfaces/userInterface';
+import { HttpService } from './http.service';
+import { User } from '../interfaces/user.interface';
 
 @Injectable()
 export class UserService {

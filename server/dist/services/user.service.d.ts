@@ -1,5 +1,5 @@
-import { HttpService } from './httpService';
-import { User } from '../interfaces/userInterface';
+import { HttpService } from './http.service';
+import { User } from '../interfaces/user.interface';
 export declare class UserService {
     private readonly httpService;
     constructor(httpService: HttpService);
