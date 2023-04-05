@@ -11,19 +11,18 @@
       <td class="border px-8 py-4">{{ user.username }}</td>
       <td class="border px-8 py-4">{{ user.email }}</td>
       <td class="border px-8 py-4 text-center">
-        <button
-          class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-700 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-black-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-black-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400"
-          (click)="onClick(user.id)"
-        >
-          <span
-            class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-700 rounded-md group-hover:bg-opacity-0"
+        <a routerLink="/users/{{ user.id }}">
+          <button
+            class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-700 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-black-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-black-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400"
+            (click)="onClick(user.id)"
           >
-          <a routerLink="/users/{{user.id}}">
-            View details here
-          </a>
-            
-          </span>
-        </button>
+            <span
+              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-700 rounded-md group-hover:bg-opacity-0"
+            >
+              View details here
+            </span>
+          </button>
+        </a>
       </td>
     </tr>
   </table>
