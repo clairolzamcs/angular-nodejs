@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { UserService } from '../services/user.service';
-import { UserResponse } from '../interfaces/user-esponse.interface';
+import { UserResponse } from '../interfaces/user-response.interface';
 import { User } from '../interfaces/user.interface';
 
 @Controller('users')

@@ -1,0 +1,14 @@
+<div class="flex mt-6 justify-center">
+  <table class="w-5/6 shadow-lg bg-white table-auto">
+    <tr class="text-center">
+      <th class="ont-bold p-2 border-b bg-red-700 text-white">ID</th>
+      <th class="ont-bold p-2 border-b bg-red-700 text-white">Username</th>
+      <th class="ont-bold p-2 border-b bg-red-700 text-white">Email</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td class="border px-8 py-4">{{ user.id }}</td>
+      <td class="border px-8 py-4">{{ user.username }}</td>
+      <td class="border px-8 py-4">{{ user.email }}</td>
+    </tr>
+  </table>
+</div>
