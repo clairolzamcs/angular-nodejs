@@ -9,9 +9,6 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class UsersListComponent implements OnInit {
   users?: User[];
-  currentUser: User = {};
-  currentIndex = -1;
-  title = '';
 
   constructor(private userService: UserService) {}
 
@@ -28,4 +25,9 @@ export class UsersListComponent implements OnInit {
       error: (e) => console.error(e),
     });
   }
-}
+
+  onClick(event: any) {
+    const cellValue = event;
+    console.log('Clicked cell value:', cellValue);
+  }
+} 
