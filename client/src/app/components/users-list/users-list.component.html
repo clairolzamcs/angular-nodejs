@@ -1,10 +1,10 @@
 <div class="flex mt-6 justify-center">
   <table class="w-5/6 shadow-lg bg-white table-auto">
     <tr class="text-center">
-      <th class="ont-bold p-2 border-b bg-red-700 text-white">ID</th>
-      <th class="ont-bold p-2 border-b bg-red-700 text-white">Username</th>
-      <th class="ont-bold p-2 border-b bg-red-700 text-white">Email</th>
-      <th class="ont-bold p-2 border-b bg-red-700 text-white"></th>
+      <th class="font-bold p-2 border-b bg-red-700 text-white">ID</th>
+      <th class="font-bold p-2 border-b bg-red-700 text-white">Username</th>
+      <th class="font-bold p-2 border-b bg-red-700 text-white">Email</th>
+      <th class="font-bold p-2 border-b bg-red-700 text-white"></th>
     </tr>
     <tr class="cover:bg-sky-700" *ngFor="let user of users">
       <td class="border px-8 py-4">{{ user.id }}</td>
@@ -13,14 +13,9 @@
       <td class="border px-8 py-4 text-center">
         <a routerLink="/users/{{ user.id }}">
           <button
-            class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-700 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-black-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-black-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400"
-            (click)="onClick(user.id)"
+            class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 border-b-4 border-red-700 hover:border-red-700 rounded"
           >
-            <span
-              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-700 rounded-md group-hover:bg-opacity-0"
-            >
-              View details here
-            </span>
+            View user
           </button>
         </a>
       </td>
