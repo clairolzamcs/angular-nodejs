@@ -6,7 +6,7 @@
 **To run server**
 
 ```
-cd /server
+cd server
 
 npm install
 
@@ -19,7 +19,7 @@ npm run start
 **To run client**
 
 ```
-cd /client
+cd client
 
 npm install
 
